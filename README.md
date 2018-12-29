@@ -18,9 +18,9 @@ Python 2.7. To install all the libraries, run pip install -r requirements.txt
 # How to run
 
 1. For automated trading, run the following command:  
-        python run.py  
+        >python run.py  
 There are some default command-line arguments (see the run.py script for details). For example, the above command is basically same as,  
-        python run.py -e 1000 -i 10000 -s MSFT AMZN IBM  
+        >python run.py -e 1000 -i 10000 -s MSFT AMZN IBM  
 You can input any number of episodes, amount of initial investment and stocks you want by following the above sequence in the         command-line. For example,  
         python run.py -e 2000 -s NVDA INTC  
 2. To generate plots for the stock data, run the following command.      
