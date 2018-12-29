@@ -8,10 +8,15 @@ Python 2.7. To install all the libraries, run pip install -r requirements.txt
 
 # Table of content
 agent.py: a Double Deep Q learning agent
+
 envs.py: a multi-stock trading environment
+
 utils.py: some utility functions
-run_stock_data.py: to generate graphs for stock data
-run.py: main()
+
+run_stock_data.py: additional script only to generate plots for the stock data
+
+run.py: main file for the project
+
 requirement.txt: all dependencies
 
 data/: 3 csv files with IBM, MSFT, and QCOM stock prices from Jan 3rd, 2000 to Dec 27, 2017 (5629 days). The data was retrieved using Alpha Vantage API
