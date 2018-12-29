@@ -23,26 +23,26 @@ data/: 3 csv files with IBM, MSFT and AMZN stock data from 12/1/2010 to 11/30/20
 
 # How to run
 
-1.  For automated trading, run the following command:
+1. For automated trading, run the following command:
 
-    python run.py 
+python run.py 
 
-    There are some default command-line arguments (see the run.py script for details). For example, the above command is basically same     as,
+There are some default command-line arguments (see the run.py script for details). For example, the above command is basically same as,
 
     python run.py -e 1000 -i 10000 -s MSFT AMZN IBM
 
-    You can input any number of episodes, amount of initial investment and stocks as you want by following the above sequence in the         command-line. For example, 
+You can input any number of episodes, amount of initial investment and stocks you want by following the above sequence in the         command-line. For example, 
 
     python run.py -2000 -s NVDA INTC
 
-2. To generate plots for the stock data, run the following command:
-
+2. To generate plots for the stock data, run the following command.
+    
     python run_stock_data.py
 
-    which is by default same as
+which is by default same as,
 
     python run_stock_data.py -s MSFT AMZN IBM 
 
-    But you can input any stocks you want instead of MSFT, AMZN or IBM. For example,
+But you can input any stocks you want instead of MSFT, AMZN or IBM. For example,
     
     python run_stock_data.py -s TSLA AAPL
