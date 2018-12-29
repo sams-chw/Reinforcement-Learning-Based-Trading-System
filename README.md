@@ -13,7 +13,6 @@ Python 2.7. To install all the libraries, run pip install -r requirements.txt
 **run.py:** main file for the project  
 **run_stock_data.py:** additional script only to generate plots for the stock data  
 **requirement.txt:** all dependencies  
-**data/:** 3 csv files with IBM, MSFT and AMZN stock data from 12/1/2010 to 11/30/2018. The data can be download using Yahoo Finance API  
 
 # How to run
 
