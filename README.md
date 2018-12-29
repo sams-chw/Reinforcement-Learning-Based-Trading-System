@@ -19,9 +19,30 @@ run.py: main file for the project
 
 requirement.txt: all dependencies
 
-data/: 3 csv files with IBM, MSFT, and QCOM stock prices from Jan 3rd, 2000 to Dec 27, 2017 (5629 days). The data was retrieved using Alpha Vantage API
+data/: 3 csv files with IBM, MSFT and AMZN stock data from 12/1/2010 to 11/30/2018. The data can be download using Yahoo Finance API
 
 # How to run
-To train a Deep Q agent, run python run.py --mode train. There are other parameters and I encourage you look at the run.py script. After training, a trained model as well as the portfolio value history at episode end would be saved to disk.
 
-To test the model performance, run python run.py --mode test --weights <trained_model>, where <trained_model> points to the local model weights file. Test data portfolio value history at episode end would be saved to disk.
+For automated trading, run the following command:
+
+python run.py 
+
+There are some default command-line arguments. Please see the run.py script. For example, the above command is basically same as below.
+
+python run.py -e 1000 -i 10000 -s MSFT AMZN IBM
+
+You can input the number of episodes, amount of initial investment and the stocks as you desire by following the above sequence in the command-line.
+
+For example, 
+python run.py -2000 -s NVDA INTC
+
+For generating plots for the stock data, run the following command:
+
+python run_stock_data.py
+
+which is by default same as
+
+python run_stock_data.py -s MSFT AMZN IBM 
+
+But you can input any stocks you want instead of MSFT, AMZN or IBM. For example,
+python run_stock_data.py -s TSLA AAPL
