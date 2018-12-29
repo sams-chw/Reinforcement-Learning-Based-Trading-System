@@ -1,0 +1,10 @@
+numpy
+pandas
+keras
+tensorflow
+sklearn
+gym==0.9.4
+plotly
+matplotlib
+
+
