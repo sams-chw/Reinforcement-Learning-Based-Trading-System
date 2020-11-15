@@ -1,5 +1,4 @@
 # Automated Trading using Reinforcement Learning (DDQN)
-## Capstone-Project-MLND-Udacity
 
 This repo contains code for the MLND capstone project 
 
