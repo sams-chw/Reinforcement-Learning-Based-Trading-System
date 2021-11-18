@@ -1,7 +1,5 @@
 # Automated Trading using Reinforcement Learning (DDQN)
 
-This repo contains code for the MLND capstone project 
-
 # Dependencies
 Python 2.7. To install all the libraries, run pip install -r requirements.txt
 
